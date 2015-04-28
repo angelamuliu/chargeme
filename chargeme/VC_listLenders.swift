@@ -9,9 +9,7 @@
 import Foundation
 import UIKit
 
-class VC_listLenders: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    @IBOutlet weak var lenderList: UITableView!
-    var request_type = "";
+class VC_listLenders: UIViewController {
     
     override func viewDidLoad() {
         println("HALY");
@@ -71,28 +69,6 @@ class VC_listLenders: UIViewController, UITableViewDelegate, UITableViewDataSour
 
         
         
-    }
-
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
-//        return Utils.findMatchingLenders(<#request: PFObject#>);
-    }
-    
-    // Now we're inserting a label into each table cell
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) ->   UITableViewCell {
-                let cell = UITableViewCell()
-        return cell
-        
-    }
-    
-    // For styling, this is for UITableViewDelegate
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 50
-    }
-    
-    // Touch handler: Tapping a charger removes it
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-
     }
 }
 

@@ -37,6 +37,7 @@ class VC_Homepage: UIViewController {
     }
    
     override func viewDidLoad() {
+        sendnotif.hidden = true
         if Utils.loggedIn() {
             loginbutton.hidden = true
             logoutbutton.hidden = false
@@ -52,6 +53,16 @@ class VC_Homepage: UIViewController {
             super.viewDidLoad()
         }
     }
+    
+    
+    // Programmatically give style to buttons
+    func giveborder(button: UIButton) {
+        button.backgroundColor = UIColor.clearColor()
+        button.layer.cornerRadius = 5
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor.orangeColor().CGColor
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

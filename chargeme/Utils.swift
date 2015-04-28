@@ -85,6 +85,7 @@ class Utils {
             }
         }
     }
+
     
     
     // Notification Setup code (Angela): Will ask user if they want to allow notifications from our app, and sets up what notifications we respond to
